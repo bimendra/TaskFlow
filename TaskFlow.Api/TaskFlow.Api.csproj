@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaskFlow.Client\taskflow.client.esproj" />
+  </ItemGroup>
+
 </Project>
