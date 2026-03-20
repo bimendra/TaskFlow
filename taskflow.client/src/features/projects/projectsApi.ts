@@ -1,25 +1,5 @@
 import { apiSlice } from "../api/apiSlice";
-
-export interface Project {
-  id: number;
-  name: string;
-  description?: string | null;
-  status: string;
-  createdAtUtc: string;
-}
-
-export interface CreateProjectRequest {
-  name: string;
-  description?: string;
-  status: string;
-}
-
-export interface UpdateProjectRequest {
-  id: number;
-  name: string;
-  description?: string;
-  status: string;
-}
+import type { CreateProjectRequest, Project, UpdateProjectRequest } from "./interfaces";
 
 export const projectsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
